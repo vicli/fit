@@ -1,0 +1,19 @@
+/* GOAL FORM */
+.goal_form{
+	padding: 10px;
+	height: 50px;
+}
+.goal_form input{
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	float:left;
+	vertical-align: middle;
+}
+
+.goal_form p{
+	float:left;
+	vertical-align: middle;
+}
+

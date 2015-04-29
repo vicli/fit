@@ -1,0 +1,53 @@
+<template name= "goal_form">
+<!-- 	<form class="new-goal">
+		<p>I will</p>
+        <input type="text" name="objective" placeholder="objective">
+        <p> for</p>
+        <input type="text" name="goaltime" placeholder="goaltime">
+        <p> for</p>
+        <input type="text" name="money" placeholder="money"> -->
+        <!-- <input type="submit" value="Set Goal"> -->
+<!--     </form> -->
+<!-- {{#dropdownTrigger name="objective" }}
+  <button>set goal</button>
+{{/dropdownTrigger}}
+{{#dropdown name=objective_select}}
+    <ul class="dropdown__menu">
+      {{#each objectives}}
+        <li role="menuItem"><a href="#">{{this}}</a></li>
+      {{/each}}
+    </ul>
+{{/dropdown}} -->
+
+<div class="center text_area">
+{{#dropdownTrigger name=objective}}
+    <button>set goal</button>
+{{/dropdownTrigger}}
+
+{{#dropdown name=this }}
+<ul class="dropdown__menu">
+  {{#each objectives}}
+    <li ><a href="#">{{this}}</a></li>
+  {{/each}}
+</ul>
+{{/dropdown}}
+</div> 
+<!-- {{#dropdown name="objective-select"}}
+  <p>walk</p>
+  <p>burn</p>
+  <p>climb</p>
+{{/dropdown}} -->
+	<form class = "centered goal_form">
+        <!-- <input type="text" name="text" placeholder="Type to add new goals" /> -->
+        <p>I will</p>
+        
+
+        <input type="text" name="objective" class="objective" placeholder="objective" />
+        <p> for</p>
+        <input type="text" name="goaltime" class="goaltime" placeholder="goaltime" />
+        <p> for</p>
+        <input type="text" name="money" class="money" placeholder="money" />
+        <button type="submit">Add Goal</button>
+    </form>
+</template>
+

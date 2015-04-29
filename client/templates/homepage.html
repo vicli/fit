@@ -1,0 +1,38 @@
+<template name="homepage">
+	{{#if currentUser}}
+<!-- 	<header>
+		<h1>Fitbet</h1>  
+		<p>Hello {{profile.name}}!</p>     
+	</header> -->
+	  	<div class="container">
+			<p><a href="#" class="logout">Logout</a></p>
+
+	  		<div class="flexbox-container">
+				<div class="prof_container">
+					{{> profile_side}}
+				</div>
+				<div class="goal_container">
+				    {{> goal_form}}
+				    <ul>
+				      {{#each goals}}
+				        {{> goal}}
+				      {{/each}}
+				    </ul>
+				</div>
+			</div>
+
+		</div>
+    {{else}}
+
+    	<div class="container centered welcome_box">
+    		<div class="center" id="welcome">
+    			{{> signin}}
+    		</div>
+
+    		
+        	<!-- {{> register}} -->
+    	</div>
+        
+    {{/if}}
+  	
+</template>
